@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body, html {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      overflow-x: hidden;
+    }
+    #page2 {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #ffafaf;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      background: #fff;
+      max-width: 100%;
+      width: 90%;
+    }
+    h1 {
+      font-size: 24px;
+      color: #ff6f6f;
+      margin-bottom: 15px;
+    }
+    #gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding: 10px;
+      scroll-snap-type: x mandatory;
+      width: 100%;
+    }
+    .card {
+      flex: 0 0 calc(20% - 15px); /* Membuat tampilan 5 kolom */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background-color: #fff;
+      scroll-snap-align: start;
+      min-width: 200px;
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .card p {
+      padding: 10px;
+      font-size: 12px;
+      color: #333;
+      margin-bottom: 2px;
+    }
+     /* Tombol Next */
+     .next-button {
+      position: absolute;
+      top: 30px;
+      right: 150px;
+      padding: 10px 20px;
+      background-color: #ff6f6f;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .next-button:hover {
+      background-color: #ff4f4f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 2: Anniversary Gallery -->
+  <div id="page2">
+    <h1>happy anniversary sayang</h1>
+    <!-- Tombol Next -->
+    <a href="video.html" class="next-button">Next</a>
+    <div id="gallery">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="chat1.jpeg" alt="Photo 1">
+        <p>19-05-2024 <br/> Chat pertama kita <br/> wkwk kenapa harus mulai dari anying ya:) aku bersyukur deh disini nemu kamu,
+        aku kira kamu cowo-cowo buaya yang lewat ternyata bukannn, kamu orang yang kalo udah sayang tu tulus banget🥰</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="chat2.jpeg" alt="Photo 2">
+        <p>Disini pertama kita call, lucu banget sampe dihitung dulu mau call juga😂 katanya si "aku malu banget orangnya ih" wkwk
+            terus kamu bilang "denger suara kamu meleleh aku" padahal mah aku yang meleleh ngedenger suara ganntengg kamuu
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="chat3.jpeg" alt="Photo 3">
+        <p>23-05-2024 <br/> Sampai akhirnya kita pindah wa🎉 awal2 udah panggil sayang aja, DASARRR 
+        tapi aku seneng kok, salting juga wkwk, dan akhirnya aku juga pengen panggil kamu sayang😂 gimana betapa saltingnya kan dipanggil sayang wkwk </p>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="call1.jpeg" alt="Photo 4">
+        <p>dan lama-lama kita terus-terusan call, kita ngobrol-ngobrol bareng, cerita-cerita:) sampe aku ngerasa nyaman banget ngobrol sama kamu:)</p>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="call2.jpeg" alt="Photo 5">
+        <p>DAN DI TANGGAL 06-06-2024, JAM 23:23 kita akhirnya jadian🥰 seneng banget rasanyaa, apalagi pas kamu ngomong itu aku udah bener-bener gatau harus jawabnya gimana,
+            lucu banget pas mau ngomong, minum dulu gara2 tenggrokannya kering😂
+        </p>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="1.jpeg" alt="Photo 1">
+        <p>first date 🥰 <br/> 20-07-2024 pertemuan pertama kita, yaps kaya yang kemaren aku bilang aku malu2 banget yaa disini😁 tapi aku seneng akhirnya bisa ketemu juga
+        kalo kecafe itu pasti bakal keinget banget, kita dulu disitu</p> 
+        <h6 style="color:grey">maaf fotonya ternyata masih ada di chat temen aku, jadi ga kehapus🙏🏽</h6>
+      </div>
+    
+      <div class="card">
+        <img src="mieayam.jpeg" alt="Photo 7">
+        <p>Mie ayam pertama yang aku makan bareng kamu, aku kalo lewat tempatnya inget terus wkwk, seneng banget deh bisa makan mie ayam bareng kamu:) tapi akunya masih jaim-jaim wkwk</p>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card">
+        <img src="photo2.png" alt="Photo 7">
+        <p>OIYAA Anci sama Pompom harus dimasukin wkwk <br/> skrng mereka jadi samaan kaya kita, ldr wkwk, anci udah sama kamu, pompom sama aku wkwk</p>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="card">
+        <img src="gofood.png" alt="Photo 7">
+        <p>Makasiiii yaaa seringg gofoodin akuu, kalo dibeliin kamu rasanya beda, jadi lebih enakkk😁</p>
+      </div>
+
+      <div class="card">
+        <img src="2.jpeg" alt="Photo 7">
+        <p>Pertemuan ke 2 kita, walaupun waktunya dikit tapi aku ngerasa berkesan banget🥰 seneng banget karokean bareng(hehe meskipun aku gamau nyanyi😁), nonton, jalan-jalan dari jogja kebraga, ke cafe, ke lengkong:), 
+            maaf ya videonya belum mau aku hapuss, karena ini kenangan yang paling berkesan yang bakal aku inget terus
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

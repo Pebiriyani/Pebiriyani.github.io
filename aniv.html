@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anniversary Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body, html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+ 
+    #page1, #page2 {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #ffafaf;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      background: #fff;
+      max-width: 700px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 24px;
+      color: #ff6f6f;
+      
+    }
+    input[type="date"] {
+      padding: 8px;
+      margin-bottom: 15px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ffafaf;
+    }
+    button {
+      background-color: #ff6f6f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #ff4f4f;
+    }
+    #message {
+      color: red;
+      margin-top: 10px;
+    }
+   h6{
+    size: 10px;
+    margin-bottom: 5px;
+    color: grey;
+   }
+    /* Styling for Page 2 */
+    #page2 {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      padding: 20px;
+      background-color: #ffefef;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    #gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+      scroll-snap-type: x mandatory;
+      height: 100%;
+    }
+    .card {
+      min-width: 80vw;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background-color: #fff;
+      scroll-snap-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .card p {
+      padding: 15px;
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Login Page -->
+  <div id="page1">
+    <h1>Masukin passwordnya duluu wkwk</h1>
+    <h6>(cluenya tanggal spesial )</h6>
+    <input type="date" id="dateInput">
+    <button onclick="checkDate()">Enter</button>
+    <p id="message"></p>
+  </div>
+
+
+
+
+  <script>
+    function checkDate() {
+      // Set the correct anniversary date (YYYY-MM-DD format)
+      const correctDate = "2024-06-06"; // Ganti dengan tanggal jadian kamu
+      const inputDate = document.getElementById("dateInput").value;
+      const message = document.getElementById("message");
+
+      if (inputDate === correctDate) {
+        // Redirect to anniversary.html if the date is correct
+        window.location.href = "anniversary.html";
+      } else {
+        message.textContent = "SALAHHH, ayooo lohhh";
+      }
+    }
+  </script>
+</body>
+</html>

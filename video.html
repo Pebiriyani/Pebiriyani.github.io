@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Special Video</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body, html {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #82243b, #ff6f6f);
+    }
+    #video-container {
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      background: #fff;
+    }
+    h3 {
+      font-size: 24px;
+      color: #ff6f6f;
+      margin-bottom: 15px;
+    }
+    video {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    /* Styling for the text card */
+    .text-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 700px; /* Width of the text card */
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      margin-left: 20px;
+      position: relative; /* For positioning the ribbon */
+    }
+    .text-card h4 {
+      margin-bottom: 10px;
+      color: #82243b; /* Title color */
+    }
+    .text-card p {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.5;
+      white-space: nowrap; /* Prevent wrapping */
+      overflow: hidden; /* Hide overflow */
+      border-right: 2px solid #333; /* Cursor effect */
+      animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite; /* Animation */
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: #333;
+      }
+    }
+    /* Ribbon style */
+    .ribbon {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #ff6f6f;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transform: rotate(45deg);
+      font-size: 12px;
+    }
+    /* Tombol Next */
+    .next-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6f6f;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+      margin-top: 20px; /* Add some space above the button */
+    }
+    .next-button:hover {
+      background-color: #ff4f4f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Page -->
+  <div id="video-container">
+    <h3>aku ada video buat kamu😁</h3>
+    <video controls>
+      <source src="vid1.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <!-- Text Card -->
+  <div class="text-card">
+    <div class="ribbon">Special</div>
+    <h4>Tonton dulu videonya, aku mau ngasih kata kata nih😁</h4>
+    <div id="additional-text"></div> <!-- Additional text will go here -->
+    <!-- Tombol Next -->
+    <a href="finalpage.html" class="next-button">Next</a>
+  </div>
+
+  <script>
+    const additionalText = "happy aniversery sayang, di aniv kali ini rasanya sedih banget:(  dan di aniv kali ini aku cuma pengen bilang maaf banyak2 ke kamu, aku tau kamu udah muak banget kayanya denger maaf aku doang, tapi ujungnya aku ga berubah2, maaf yaaa buat semuaa rasa sakit, rasa kecewa yang aku lakuin ke kamu, udah gagal jadi pasangan yang baik, dan jadi orang yang jahat banget ke kamu, sampe hal kecil yang kamu sukapun aku gatau, bodoh banget ya, padahal harusnya itu hal yang gampang banget. aku kira aku bakal jadi kenangan atau pengalaman yang terbaik buat kamu, ternyata kebalikannya, aku jadi kenangan yang paling buruk buat kamu. dan gaadilnyaa buat kamu, aku malah dapett kenangan baik sama kamu, makasi ya udah pernah bikin aku bahagiaa, senyum2, salting, bahkan denger notif chat kamu aja aku seneng (hehe notif kamu, aku bedain sendiri sama kontak aku yang lain, jadi kedengernya beda)";
+    let index = 0;
+
+    function typeAdditionalText() {
+      let additionalIndex = 0;
+      const additionalTextElement = document.getElementById("additional-text");
+
+      function typeNext() {
+        if (additionalIndex < additionalText.length) {
+          additionalTextElement.textContent += additionalText.charAt(additionalIndex);
+          additionalIndex++;
+          setTimeout(typeNext, 50); // Adjust typing speed here
+        }
+      }
+      typeNext();
+    }
+
+    // Start typing animation for the initial text
+    setTimeout(typeAdditionalText, 24000); // Adjust time to match animation duration
+  </script>
+  
+</body>
+</html>
